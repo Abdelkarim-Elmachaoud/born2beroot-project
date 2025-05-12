@@ -44,7 +44,8 @@ During OS installation:
 ```bash
 sudo adduser login42
 sudo usermod -aG sudo,user42 login42
-4. 🔐 Password Policy (PAM)
+
+### 4. 🔐 Password Policy (PAM)
 Install PAM module:
 
 bash
@@ -63,7 +64,7 @@ bash
 Copy
 Edit
 sudo chage -M 30 -m 2 -W 7 login42
-5. ⚙️ Sudo Configuration
+### 5. ⚙️ Sudo Configuration
 Edit with sudo visudo and apply:
 
 bash
@@ -106,7 +107,7 @@ Edit
 sudo apt install ufw
 sudo ufw allow 4242/tcp
 sudo ufw enable
-8. 📊 Monitoring Script
+### 8. 📊 Monitoring Script
 Create /usr/local/bin/monitoring.sh:
 
 bash
@@ -155,7 +156,7 @@ cron
 Copy
 Edit
 */10 * * * * /usr/local/bin/monitoring.sh
-✅ Final Checklist
+### ✅ Final Checklist
  VM installed with proper partitioning and LVM
 
  Hostname set correctly
